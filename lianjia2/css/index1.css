@@ -1,0 +1,446 @@
+*{}
+body{
+	background:url("../images/timg6.jpg") no-repeat top center;
+	background-size:1366px 622px;
+	position:relative;
+}
+#manager{
+	width:1166px;
+	position:absolute;
+	left:50%;
+	margin-left:-583px;   /* 1366/2==683,(1366-1166)/2==100,683-100==583; */
+}
+#top2{
+	padding-top:38px;
+	color:white;
+}
+#left2_1{
+	cursor:pointer;
+}
+#left2_2{
+	cursor:pointer;
+	position:absolute;   /* 不用此句，设置padding/margin-top/bottom的值多少都没有反应 */
+	margin-left:16px;
+	margin-top:5px;      /* 如果用padding,那么在查看元素时并不影响元素的宽高，但给元素上背景颜色时，会连padding"内补"的部分也加上背景颜色，所以此处用margin. */
+	display:inline-block;
+	width:66px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	/*background:#aaa;
+	opacity:0.9; */      /* 透明度，背景、文字都透明 */
+	background-color:rgba(150,150,150,0.6);/* 第四个参数透明度，设置只背景透明 */
+	border-radius:15px;
+}
+#left2_2 img{
+	margin-top:7px;
+}
+#left2_2 span{
+	font-size:12px;
+	padding-left:5px;  /* 图片和文字的距离 */
+/* 在行级元素下对文字跟着图片动的处理： */
+	display:inline-block;   
+	height:20px;
+	vertical-align:middle;
+	margin-bottom:20px;
+}
+
+#right2{
+	position:absolute;
+	right:0;
+}
+#right2 a{
+	color:white;
+	font-size:16px;
+	font-weight:600;
+	text-decoration:none;
+	margin-right:15px;
+}
+
+#top1{
+	float:right;
+	margin-top:12px;
+}
+#top1 a{
+	color:white;
+	text-decoration:none;
+	font-size:12px;
+	margin-right:15px;
+	display:inline-block;
+	/* height:-4px; */
+	vertical-align:middle;
+	margin-bottom:13px;
+}
+#top1 img{
+	margin-right:6px; 
+}
+
+
+#center2{
+	color:white;
+	text-align:center;
+	margin-top:100px;
+}
+#center2_up div{
+	font-size:66px;
+	font-weight:bold;
+	font-family:"宋体b8b";
+}
+#center2_up_change{
+	font-size:20px;
+}
+#center2_down a{
+	color:white;
+	text-decoration:none;
+}
+#center2_down p{
+	width:782px;
+	margin-left:192px;
+}
+#center2_down_p1{
+	text-align:left;
+}
+#center2_down_p1 a{
+	color:#bbb;
+}
+#center2_down_p1 a:first-child{
+	color:#fff;
+}
+#center2_down_p2 input:first-child{
+	width:650px;
+	height:50px;
+	font-size:18px;
+}
+#center2_down_p2 input:last-child{
+	width:120px;
+	height:50px;
+	background:green;
+	color:white;
+	font-size:20px;
+	text-align:center;
+	cursor:pointer;
+	margin-left:-6px;
+	margin-top:-6px;
+}
+
+#foot2_one{
+	padding-top:180px;
+	height:480px;
+	text-align:center;
+}
+.foot2_one_div{
+	display:inline-block;
+	width:350px;
+	height:460px;
+	text-align:center;
+}
+.foot2_one_div_1{
+	font-size:28px;
+}
+.foot2_one_div_2{
+	width:350px;
+	height:266px;
+	/* line-height:266px; 
+	vertical-align:middle;  方法1居中无效*/	
+}
+.foot2_one_div_2 img{
+	cursor:pointer;
+	margin-top:11px;   /* 方法3居中有效 */
+}
+.foot2_one_div_2 img:hover{
+	width:288px; 
+	height:266px; 
+	/* padding:11px 0; 方法2居中无效*/
+	margin-top:0;      /* 方法3居中有效 */
+}
+.foot2_one_div_3{
+	font-size:14px;
+	color:#999;
+}
+.foot2_one_div_4{
+	font-size:16px;
+}
+.foot2_one_div_4 a{
+	text-decoration:none;
+	color:blue;
+}
+
+#foot2_two{
+	background:#eee;
+	height:600px;
+	font-size:28px;
+	color:#666;
+	padding-left:180px;
+	margin-left:-90px;
+	margin-right:-90px;
+}
+#foot2_two_p1_span{
+	font-weight:bold;
+}
+#foot2_two_p1{
+	padding-top:60px;
+}
+#foot2_two_p2{
+	font-size:14px;
+}
+#foot2_two_p2_span{
+	float:right;
+	padding-right:166px;
+	color:#222;
+	cursor:pointer;
+}
+#foot2_two_p2_span:hover{
+	text-decoration:underline;
+}
+#foot2_two>p>img{
+	cursor:pointer;
+}
+
+#foot2_three{
+	height:460px;
+	margin-left:-90px;
+	margin-right:-90px;
+	background:url(../images/52.png) no-repeat;
+	background-size:cover;
+	padding-top:80px;
+	padding-left:90px;
+}
+#foot2_three span{
+	font-size:42px;
+	display:block;
+	color:#666;
+}
+#foot2_three b{
+	font-size:64px;
+	color:#333;
+}
+#foot2_three p{
+	font-size:15px;
+	width:500px;
+}
+#foot2_three ul{
+	list-style-type:none;
+	margin-left:-40px;
+	margin-top:46px;
+}
+#foot2_three ul li{
+	width:130px;
+	height:45px;
+	background:green;
+	color:white;
+	text-align:center;
+	line-height:40px;
+	margin-bottom:10px;
+	cursor:pointer;
+}
+
+#foot2_four{
+	height:500px;
+	margin-left:-90px;
+	margin-right:-90px;
+	background:#eee;
+	padding-left:110px;
+	padding-right:110px;
+	padding-top:50px;
+}
+#foot2_four>div{
+	font-size:32px;
+	color:#999;
+}
+#foot2_four>div>span{
+	font-weight:bolder;
+	color:#444;
+}
+#foot2_four>p{
+	color:#999;
+	font-size:14px;
+}
+#foot2_four>p>a{
+	float:right; 
+	color:#222;
+}
+#foot2_four>p>a:hover{
+	text-decoration:underline;
+	cursor:pointer;
+}
+.foot2_four_content_1{
+	width:250px;
+	display:inline-block;  /* 没有此句，则不会排到一排，因为即使给了宽度，他任然是块级元素 ，所以先需要转换为行内块级元素*/
+	margin-right:30px;
+	font-size:14px;
+	cursor:pointer;
+}
+.foot2_four_content_1:last-child{
+	margin-right:0;
+}
+.foot2_four_content_1 p{
+	width:210px;
+	height:60px;
+	margin-top:0;
+	padding:15px 20px 0 20px;
+	font-size:16px;
+	background:#fff;
+	color:#444;
+}
+.foot2_four_content_1 span{
+	margin-right:10px;
+}
+
+#foot2_five{
+	height:260px;
+	margin-left:-90px;
+	margin-right:-90px;
+	padding-left:110px;
+	/* background:url("../images/timg.jpg") no-repeat;
+	background-size:cover;
+	opacity:0.2; */
+	background-color:rgba(1,180,60,0.8);
+	color:#fff;
+}
+#foot2_five_left{
+	width:48%;
+	/* display:inline-block; */   /* 不能左右排布，因为子元素还有更多块级元素 */
+	float:left;
+	font-size:50px;
+	font-weight:lighter;
+}
+#foot2_five_right{
+	width:52%;
+	/* display:inline-block; */   /* 不能左右排布，因为子元素还有更多块级元素  */
+	float:right;
+}
+#foot2_five_left>div:first-child{
+	font-weight:bold;
+	margin-top:50px;
+}
+#foot2_five_right>div:first-child{
+	margin-top:70px;
+}
+#foot2_five_right>p>input{
+	width:500px;
+	height:40px;
+	border:0;
+}
+/* #foot2_five_right>p>img{
+	margin-top:-10px;  下拉框也跟着动
+	position:absolute;
+} */
+#foot2_five_right>p>span{
+	display:inline-block;
+	width:44px;height:44px;
+	background:#fff;
+	position:absolute;   /* 有此句就可以对齐了 */
+	background:url("../images/suo5.png") no-repeat;
+	cursor:pointer;
+}
+
+#foot2_six{
+	height:200px;
+}
+.foot2_six_content{
+	width:280px;
+	display:inline-block;
+	text-align:center;
+	margin-top:40px;
+}
+.foot2_six_content>img{
+	margin-bottom:10px;
+}
+.foot2_six_content>span{
+	font-size:22px;
+	font-weight:bold;
+	color:#333;
+}
+.foot2_six_content>span:last-child{
+	font-size:14px;
+	color:#999;
+}
+
+#foot2_seven{
+	height:400px;
+	background:#333;
+	margin-left:-90px;
+	margin-right:-90px;
+	padding-left:100px;
+	padding-right:100px;
+	padding-top:20px;
+	color:#fff;
+}
+#foot2_seven_up{
+	height:40px;
+}
+#foot2_seven_center{
+	height:160px;
+}
+#foot2_seven_down{
+	height:160px;
+	color:#999;
+	font-size:12px;
+}
+#foot2_seven_up>a{
+	color:#fff;
+	text-decoration:none;
+	font-size:14px;
+	margin-right:10px;
+}
+#foot2_seven_up>span{
+	font-size:14px;
+	color:#2BA455;
+	float:right;
+}
+#foot2_seven_center_left{
+	width:986px;
+	float:left;
+	margin-top:6px;
+}
+#foot2_seven_center_right{
+	width:160px;
+	float:right;
+}
+#foot2_seven_center_left>a{
+	text-decoration:none;
+	color:#999;
+	background:#000;
+	font-size:12px;
+	display:inline-block;
+	width:120px;
+	height:36px;
+	line-height:36px;
+	text-align:center;
+	cursor:pointer;
+}
+/* 鼠标移出时即无效果，不符合题意，改用JS实现。
+#foot2_seven_center_left>a:hover{
+	background:#555;
+	color:#fff;
+} */
+#foot2_seven_center_left div{
+	margin-top:10px;
+}
+#foot2_seven_center_left>div>a{
+	color:#999;
+	font-size:12px;
+	text-decoration:none;
+}
+#foot2_seven_center_left>div>a:hover{
+	text-decoration:underline;
+}
+#foot2_seven_down>div:first-child{
+	margin-top:26px;
+}
+
+/* 固定定位于浏览器右下角： */
+#bottom2{
+	width:230px;
+	height:40px;
+	background:white;
+	position:fixed;
+	right:0;bottom:0;
+	text-align:center;
+	line-height:40px;
+	cursor:pointer;
+/* CSS3 阴影设置：*/
+	-webkit-box-shadow:-10px -10px 25px #aaa; 
+	-moz-box-shadow:-10px -10px 25px #aaa;
+	box-shadow:-10px -10px 25px #aaa;/* 参数代表：阴影在水平、垂直方向的偏移量（往右、下偏是正值，往上、左偏是负值），阴影的模糊半径，阴影的颜色。 */
+}
